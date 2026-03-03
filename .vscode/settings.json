@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.terraform": true,
+    "**/.vscode": true
+  },
+  "hide-files.files": [],
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/andyslucky/nautikalpanel/refs/heads/master/game-server-template.schema.json" : [
+        "templates/*.yaml"
+    ]
+  }
+}

@@ -1,4 +1,3 @@
-# yaml-language-server: schema=./game-server-template.schema.json
 template_name: Satisfactory
 game_type: Satisfactory
 description: Satisfactory is the ultimate "efficiency is love efficiency is life" game.
