@@ -1,0 +1,27 @@
+name: Validate Game Server Templates
+
+on:
+  push:
+    paths:
+      - 'templates/**'
+      - '.github/workflows/validate-templates.yml'
+  pull_request:
+    paths:
+      - 'templates/**'
+      - '.github/workflows/validate-templates.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate templates against schema
+        run: |
+          check-jsonschema \
+            --schemafile "https://raw.githubusercontent.com/andyslucky/nautikalpanel/refs/heads/master/game-server-template.schema.json" \
+            templates/*.yaml
