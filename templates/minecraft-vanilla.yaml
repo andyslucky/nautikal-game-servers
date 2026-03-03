@@ -1,4 +1,4 @@
-template_name: Minecraft
+template_name: "Minecraft (Vanilla)"
 game_type: Minecraft
 description: Minecraft is a sandbox / survival / adventure game with a block art style.
 icon_url: "https://www.freeiconspng.com/uploads/minecraft-icon-13.png"
